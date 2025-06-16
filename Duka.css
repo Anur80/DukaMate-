@@ -1,0 +1,81 @@
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+}
+.tab-content {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.hero-section {
+  background-image: url('https://readdy.ai/api/search-image?query=A%20modern%20retail%20shop%20in%20Africa%20with%20a%20shopkeeper%20using%20a%20mobile%20app%20to%20manage%20inventory.%20The%20scene%20shows%20a%20well-organized%20small%20shop%20with%20various%20products%20on%20shelves.%20The%20shopkeeper%20is%20smiling%20while%20using%20a%20smartphone%20to%20scan%20products.%20The%20lighting%20is%20bright%20and%20natural%2C%20creating%20a%20positive%20atmosphere.%20The%20background%20shows%20customers%20browsing%20products.&width=1600&height=800&seq=hero1&orientation=landscape');
+  background-size: cover;
+  background-position: center;
+}
+.hero-overlay {
+  background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0.5) 100%);
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+input:focus, select:focus {
+  outline: none;
+  border-color: #4F46E5;
+}
+.custom-checkbox {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+}
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 2px solid #d1d5db;
+  border-radius: 4px;
+}
+.custom-checkbox:hover input ~ .checkmark {
+  border-color: #4F46E5;
+}
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #4F46E5;
+  border-color: #4F46E5;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+.custom-checkbox .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.tab-switcher {
+  position: relative;
+  z-index: 1;
+}
+.tab-indicator {
+  position: absolute;
+  height: 85%;
+  top: 7.5%;
+  left: 0.25rem;
+  z-index: -1;
+  border-radius: 9999px;
+  transition: transform 0.3s ease;
+}

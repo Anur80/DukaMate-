@@ -1,0 +1,1942 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DukaMate - Smart Retail Management</title>
+    <link rel="stylesheet" href="./Duka.css">
+    <link rel="stylesheet" href="DukaCSS.css" />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#4F46E5", secondary: "#10B981" },
+            borderRadius: {
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+  </head>
+  <body>
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <h1 class="text-2xl font-['Pacifico'] text-primary">DukaMate</h1>
+          </div>
+          <nav class="hidden md:flex space-x-8">
+            <a
+              href="#features"
+              class="text-gray-600 hover:text-primary font-medium"
+              >Features</a
+            >
+            <a
+              href="#how-it-works"
+              class="text-gray-600 hover:text-primary font-medium"
+              >How It Works</a
+            >
+            <a
+              href="#testimonials"
+              class="text-gray-600 hover:text-primary font-medium"
+              >Testimonials</a
+            >
+            <a
+              href="#pricing"
+              class="text-gray-600 hover:text-primary font-medium"
+              >Pricing</a
+            >
+          </nav>
+          <div class="flex items-center space-x-4">
+            <a
+              href="#demo"
+              class="hidden md:block text-primary hover:text-primary/80 font-medium"
+              >Request Demo</a
+            >
+            <a
+              href="#download"
+              class="bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-primary/90 transition"
+              >Download App</a
+            >
+          </div>
+          <button
+            id="mobile-menu-button"
+            class="md:hidden flex items-center justify-center w-10 h-10"
+          >
+            <i class="ri-menu-line ri-lg"></i>
+          </button>
+          <div
+            id="mobile-menu"
+            class="hidden fixed inset-0 bg-gray-900/50 z-50"
+          >
+            <div class="bg-white w-64 h-full flex flex-col">
+              <div class="p-4 flex justify-between items-center border-b">
+                <h1 class="text-2xl font-['Pacifico'] text-primary">
+                  DukaMate
+                </h1>
+                <button
+                  id="close-menu-button"
+                  class="w-10 h-10 flex items-center justify-center"
+                >
+                  <i class="ri-close-line ri-lg"></i>
+                </button>
+              </div>
+              <nav class="flex-1 p-4">
+                <div class="space-y-4">
+                  <a
+                    href="#features"
+                    class="block text-gray-600 hover:text-primary font-medium"
+                    >Features</a
+                  >
+                  <a
+                    href="#how-it-works"
+                    class="block text-gray-600 hover:text-primary font-medium"
+                    >How It Works</a
+                  >
+                  <a
+                    href="#testimonials"
+                    class="block text-gray-600 hover:text-primary font-medium"
+                    >Testimonials</a
+                  >
+                  <a
+                    href="#pricing"
+                    class="block text-gray-600 hover:text-primary font-medium"
+                    >Pricing</a
+                  >
+                  <a
+                    href="#demo"
+                    class="block text-primary hover:text-primary/80 font-medium"
+                    >Request Demo</a
+                  >
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="pt-16">
+      <!-- Hero Section -->
+      <section class="hero-section w-full">
+        <div class="hero-overlay w-full py-20 md:py-28">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-2xl">
+              <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Empower Your Small Business with Smart Retail Management
+              </h1>
+              <p class="text-lg md:text-xl text-gray-700 mb-8">
+                DukaMate helps small retailers track inventory, manage sales,
+                and build customer loyalty—even without an internet connection.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+              >
+                <a
+                  href="#download"
+                  class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-primary/90 transition text-center"
+                  >Download Now</a
+                >
+                <a
+                  href="#demo"
+                  class="bg-white text-primary border border-primary px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-gray-50 transition text-center"
+                  >See How It Works</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Features Section -->
+      <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Designed for Small Retailers
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+              Simple yet powerful tools to help you manage your business
+              efficiently, even in areas with limited connectivity.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div
+              class="feature-card bg-white p-6 rounded-lg shadow-md border border-gray-100 transition duration-300"
+            >
+              <div
+                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+              >
+                <i class="ri-store-3-line ri-lg text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Inventory Management
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Easily track stock levels, set low-stock alerts, and manage
+                suppliers—all from your mobile device.
+              </p>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Track product quantities in real-time</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Receive low-stock notifications</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Manage supplier information</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Feature 2 -->
+            <div
+              class="feature-card bg-white p-6 rounded-lg shadow-md border border-gray-100 transition duration-300"
+            >
+              <div
+                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+              >
+                <i class="ri-shopping-cart-line ri-lg text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Sales & Transactions
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Process sales quickly, generate receipts, and track your daily
+                revenue with our simple POS system.
+              </p>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Easy-to-use point of sale interface</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Generate and share digital receipts</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>View daily sales reports</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Feature 3 -->
+            <div
+              class="feature-card bg-white p-6 rounded-lg shadow-md border border-gray-100 transition duration-300"
+            >
+              <div
+                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+              >
+                <i class="ri-user-heart-line ri-lg text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Customer Engagement
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Build customer loyalty with points programs and keep them
+                informed with SMS notifications.
+              </p>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Implement loyalty point systems</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Send promotional SMS notifications</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span>Collect customer feedback</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- App Preview Section -->
+      <section id="how-it-works" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              How DukaMate Works
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+              See how our intuitive interface helps you manage your shop
+              efficiently, even without internet connectivity.
+            </p>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="flex flex-col md:flex-row">
+              <!-- Tab Navigation -->
+              <div class="md:w-1/4 bg-gray-50 p-4">
+                <div
+                  class="tab-switcher flex flex-row md:flex-col px-1 py-1 bg-gray-100 rounded-full md:rounded-lg"
+                >
+                  <button
+                    class="tab-btn w-full text-left py-2 px-4 rounded-full text-primary font-medium text-sm relative z-10"
+                    data-tab="inventory"
+                  >
+                    <span
+                      class="hidden md:inline-block w-5 h-5 mr-2 flex items-center justify-center"
+                    >
+                      <i class="ri-store-3-line"></i>
+                    </span>
+                    Inventory
+                  </button>
+                  <button
+                    class="tab-btn w-full text-left py-2 px-4 rounded-full text-gray-600 font-medium text-sm"
+                    data-tab="pos"
+                  >
+                    <span
+                      class="hidden md:inline-block w-5 h-5 mr-2 flex items-center justify-center"
+                    >
+                      <i class="ri-shopping-cart-line"></i>
+                    </span>
+                    Point of Sale
+                  </button>
+                  <button
+                    class="tab-btn w-full text-left py-2 px-4 rounded-full text-gray-600 font-medium text-sm"
+                    data-tab="customers"
+                  >
+                    <span
+                      class="hidden md:inline-block w-5 h-5 mr-2 flex items-center justify-center"
+                    >
+                      <i class="ri-user-heart-line"></i>
+                    </span>
+                    Customers
+                  </button>
+                  <button
+                    class="tab-btn w-full text-left py-2 px-4 rounded-full text-gray-600 font-medium text-sm"
+                    data-tab="reports"
+                  >
+                    <span
+                      class="hidden md:inline-block w-5 h-5 mr-2 flex items-center justify-center"
+                    >
+                      <i class="ri-bar-chart-line"></i>
+                    </span>
+                    Reports
+                  </button>
+                  <div class="tab-indicator bg-white md:w-full"></div>
+                </div>
+              </div>
+              <!-- Tab Content -->
+              <div class="md:w-3/4 p-6">
+                <!-- Inventory Tab -->
+                <div class="tab-content active" id="inventory-tab">
+                  <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 pr-0 md:pr-8">
+                      <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+                        Inventory Management
+                      </h3>
+                      <p class="text-gray-600 mb-6">
+                        Keep track of all your products, monitor stock levels,
+                        and receive alerts when items are running low.
+                      </p>
+                      <ul class="space-y-4">
+                        <li class="flex items-start">
+                          <div
+                            class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5"
+                          >
+                            <i class="ri-add-line"></i>
+                          </div>
+                          <div>
+                            <h4 class="font-medium text-gray-900">
+                              Add Products Easily
+                            </h4>
+                            <p class="text-gray-600">
+                              Add new products with name, category, price, and
+                              quantity in seconds.
+                            </p>
+                          </div>
+                        </li>
+                        <li class="flex items-start">
+                          <div
+                            class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5"
+                          >
+                            <i class="ri-alert-line"></i>
+                          </div>
+                          <div>
+                            <h4 class="font-medium text-gray-900">
+                              Low Stock Alerts
+                            </h4>
+                            <p class="text-gray-600">
+                              Get notified when products fall below your set
+                              threshold.
+                            </p>
+                          </div>
+                        </li>
+                        <li class="flex items-start">
+                          <div
+                            class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5"
+                          >
+                            <i class="ri-file-list-3-line"></i>
+                          </div>
+                          <div>
+                            <h4 class="font-medium text-gray-900">
+                              Bulk Import/Export
+                            </h4>
+                            <p class="text-gray-600">
+                              Quickly add multiple products via CSV import or
+                              export your inventory data.
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="md:w-1/2 mt-8 md:mt-0">
+                      <div class="bg-gray-100 rounded-lg p-4 shadow-inner">
+                        <div class="bg-white rounded-lg shadow-sm p-4">
+                          <div class="flex items-center justify-between mb-4">
+                            <h4 class="font-medium text-gray-900">
+                              Product Inventory
+                            </h4>
+                            <button
+                              class="bg-primary text-white w-8 h-8 !rounded-button flex items-center justify-center"
+                            >
+                              <i class="ri-add-line"></i>
+                            </button>
+                          </div>
+                          <div class="relative mb-4">
+                            <div
+                              class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+                            >
+                              <i class="ri-search-line text-gray-400"></i>
+                            </div>
+                            <input
+                              type="text"
+                              class="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg text-sm"
+                              placeholder="Search products..."
+                            />
+                          </div>
+                          <!-- Product List -->
+                          <div class="space-y-3">
+                            <div
+                              class="flex items-center justify-between p-3 border border-gray-100 rounded-lg hover:bg-gray-50"
+                            >
+                              <div class="flex items-center">
+                                <div
+                                  class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-500 mr-3"
+                                >
+                                  <i class="ri-shopping-basket-line"></i>
+                                </div>
+                                <div>
+                                  <h5 class="font-medium text-gray-900">
+                                    Maize Flour (2kg)
+                                  </h5>
+                                  <p class="text-sm text-gray-500">
+                                    Groceries • $3.50
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="text-right">
+                                <div class="font-medium text-gray-900">
+                                  42 units
+                                </div>
+                                <div class="text-sm text-green-500">
+                                  In stock
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="flex items-center justify-between p-3 border border-gray-100 rounded-lg hover:bg-gray-50"
+                            >
+                              <div class="flex items-center">
+                                <div
+                                  class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-green-500 mr-3"
+                                >
+                                  <i class="ri-shopping-basket-line"></i>
+                                </div>
+                                <div>
+                                  <h5 class="font-medium text-gray-900">
+                                    Cooking Oil (1L)
+                                  </h5>
+                                  <p class="text-sm text-gray-500">
+                                    Groceries • $4.25
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="text-right">
+                                <div class="font-medium text-gray-900">
+                                  18 units
+                                </div>
+                                <div class="text-sm text-yellow-500">
+                                  Running low
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="flex items-center justify-between p-3 border border-gray-100 rounded-lg hover:bg-gray-50"
+                            >
+                              <div class="flex items-center">
+                                <div
+                                  class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center text-purple-500 mr-3"
+                                >
+                                  <i class="ri-t-shirt-line"></i>
+                                </div>
+                                <div>
+                                  <h5 class="font-medium text-gray-900">
+                                    School Uniform (M)
+                                  </h5>
+                                  <p class="text-sm text-gray-500">
+                                    Clothing • $12.00
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="text-right">
+                                <div class="font-medium text-gray-900">
+                                  5 units
+                                </div>
+                                <div class="text-sm text-red-500">
+                                  Critical stock
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- POS Tab (Initially Hidden) -->
+                <div class="tab-content hidden" id="pos-tab">
+                  <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 pr-0 md:pr-8">
+                      <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+                        Point of Sale
+                      </h3>
+                      <p class="text-gray-600 mb-6">
+                        Process sales quickly and efficiently with our
+                        easy-to-use POS interface. Generate receipts and track
+                        transactions in real-time.
+                      </p>
+                      <ul class="space-y-4">
+                        <li class="flex items-start">
+                          <div
+                            class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5"
+                          >
+                            <i class="ri-search-line"></i>
+                          </div>
+                          <div>
+                            <h4 class="font-medium text-gray-900">
+                              Quick Product Search
+                            </h4>
+                            <p class="text-gray-600">
+                              Find products instantly by name or category to add
+                              to cart.
+                            </p>
+                          </div>
+                        </li>
+                        <li class="flex items-start">
+                          <div
+                            class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5"
+                          >
+                            <i class="ri-percent-line"></i>
+                          </div>
+                          <div>
+                            <h4 class="font-medium text-gray-900">
+                              Apply Discounts
+                            </h4>
+                            <p class="text-gray-600">
+                              Easily add percentage or fixed discounts to
+                              transactions.
+                            </p>
+                          </div>
+                        </li>
+                        <li class="flex items-start">
+                          <div
+                            class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5"
+                          >
+                            <i class="ri-file-list-3-line"></i>
+                          </div>
+                          <div>
+                            <h4 class="font-medium text-gray-900">
+                              Digital Receipts
+                            </h4>
+                            <p class="text-gray-600">
+                              Generate and share receipts via SMS, email, or
+                              Bluetooth printer.
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="md:w-1/2 mt-8 md:mt-0">
+                      <div class="bg-gray-100 rounded-lg p-4 shadow-inner">
+                        <div class="bg-white rounded-lg shadow-sm p-4">
+                          <div class="flex items-center justify-between mb-4">
+                            <h4 class="font-medium text-gray-900">New Sale</h4>
+                            <div class="text-sm text-gray-500">
+                              16 June 2025
+                            </div>
+                          </div>
+                          <!-- Cart Items -->
+                          <div class="border border-gray-200 rounded-lg mb-4">
+                            <div class="p-3 border-b border-gray-200">
+                              <div class="flex justify-between items-center">
+                                <div>
+                                  <h5 class="font-medium text-gray-900">
+                                    Maize Flour (2kg)
+                                  </h5>
+                                  <p class="text-sm text-gray-500">$3.50 × 2</p>
+                                </div>
+                                <div class="text-right">
+                                  <div class="font-medium text-gray-900">
+                                    $7.00
+                                  </div>
+                                  <button class="text-red-500 text-sm">
+                                    Remove
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="p-3 border-b border-gray-200">
+                              <div class="flex justify-between items-center">
+                                <div>
+                                  <h5 class="font-medium text-gray-900">
+                                    Sugar (1kg)
+                                  </h5>
+                                  <p class="text-sm text-gray-500">$2.25 × 1</p>
+                                </div>
+                                <div class="text-right">
+                                  <div class="font-medium text-gray-900">
+                                    $2.25
+                                  </div>
+                                  <button class="text-red-500 text-sm">
+                                    Remove
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="p-3">
+                              <div class="flex justify-between items-center">
+                                <div>
+                                  <h5 class="font-medium text-gray-900">
+                                    Milk (500ml)
+                                  </h5>
+                                  <p class="text-sm text-gray-500">$1.75 × 2</p>
+                                </div>
+                                <div class="text-right">
+                                  <div class="font-medium text-gray-900">
+                                    $3.50
+                                  </div>
+                                  <button class="text-red-500 text-sm">
+                                    Remove
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Totals -->
+                          <div class="space-y-2 mb-4">
+                            <div class="flex justify-between text-gray-600">
+                              <span>Subtotal</span>
+                              <span>$12.75</span>
+                            </div>
+                            <div class="flex justify-between text-gray-600">
+                              <span>Discount (10%)</span>
+                              <span>-$1.28</span>
+                            </div>
+                            <div
+                              class="flex justify-between font-medium text-gray-900 text-lg"
+                            >
+                              <span>Total</span>
+                              <span>$11.47</span>
+                            </div>
+                          </div>
+                          <div class="flex space-x-3">
+                            <button
+                              class="bg-gray-100 text-gray-700 px-4 py-2 !rounded-button whitespace-nowrap flex-1 font-medium hover:bg-gray-200 transition"
+                            >
+                              Add Customer
+                            </button>
+                            <button
+                              class="bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap flex-1 font-medium hover:bg-primary/90 transition"
+                            >
+                              Complete Sale
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Customers Tab (Initially Hidden) -->
+                <div class="tab-content hidden" id="customers-tab">
+                  <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 pr-0 md:pr-8">
+                      <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+                        Customer Engagement
+                      </h3>
+                      <p class="text-gray-600 mb-6">
+                        Build customer loyalty with points programs and keep
+                        them informed with SMS notifications about promotions.
+                      </p>
+                      <ul class="space-y-4">
+                        <li class="flex items-start">
+                          <div
+                            class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5"
+                          >
+                            <i class="ri-star-line"></i>
+                          </div>
+                          <div>
+                            <h4 class="font-medium text-gray-900">
+                              Loyalty Points
+                            </h4>
+                            <p class="text-gray-600">
+                              Reward customers with points for every purchase
+                              that they can redeem later.
+                            </p>
+                          </div>
+                        </li>
+                        <li class="flex items-start">
+                          <div
+                            class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5"
+                          >
+                            <i class="ri-message-2-line"></i>
+                          </div>
+                          <div>
+                            <h4 class="font-medium text-gray-900">
+                              SMS Notifications
+                            </h4>
+                            <p class="text-gray-600">
+                              Send promotional messages and updates directly to
+                              your customers.
+                            </p>
+                          </div>
+                        </li>
+                        <li class="flex items-start">
+                          <div
+                            class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5"
+                          >
+                            <i class="ri-history-line"></i>
+                          </div>
+                          <div>
+                            <h4 class="font-medium text-gray-900">
+                              Purchase History
+                            </h4>
+                            <p class="text-gray-600">
+                              Track customer buying patterns to offer
+                              personalized promotions.
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="md:w-1/2 mt-8 md:mt-0">
+                      <div class="bg-gray-100 rounded-lg p-4 shadow-inner">
+                        <div class="bg-white rounded-lg shadow-sm p-4">
+                          <div class="flex items-center justify-between mb-4">
+                            <h4 class="font-medium text-gray-900">
+                              Customer Management
+                            </h4>
+                            <button
+                              class="bg-primary text-white w-8 h-8 !rounded-button flex items-center justify-center"
+                            >
+                              <i class="ri-user-add-line"></i>
+                            </button>
+                          </div>
+                          <!-- Customer Profile -->
+                          <div
+                            class="border border-gray-200 rounded-lg p-4 mb-4"
+                          >
+                            <div class="flex items-start">
+                              <div
+                                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-4"
+                              >
+                                <i class="ri-user-line ri-lg"></i>
+                              </div>
+                              <div>
+                                <h5 class="font-medium text-gray-900">
+                                  Amina Ibrahim
+                                </h5>
+                                <p class="text-sm text-gray-500">
+                                  +254 712 345 678
+                                </p>
+                                <div class="flex items-center mt-1">
+                                  <div
+                                    class="text-sm bg-primary/10 text-primary px-2 py-0.5 rounded-full"
+                                  >
+                                    <span class="flex items-center">
+                                      <i class="ri-star-fill mr-1"></i> 230
+                                      points
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mt-4">
+                              <h6
+                                class="text-sm font-medium text-gray-700 mb-2"
+                              >
+                                Recent Purchases
+                              </h6>
+                              <div class="space-y-2">
+                                <div class="flex justify-between text-sm">
+                                  <span class="text-gray-600"
+                                    >12 June 2025</span
+                                  >
+                                  <span class="font-medium text-gray-900"
+                                    >$15.75</span
+                                  >
+                                </div>
+                                <div class="flex justify-between text-sm">
+                                  <span class="text-gray-600">5 June 2025</span>
+                                  <span class="font-medium text-gray-900"
+                                    >$23.40</span
+                                  >
+                                </div>
+                                <div class="flex justify-between text-sm">
+                                  <span class="text-gray-600">29 May 2025</span>
+                                  <span class="font-medium text-gray-900"
+                                    >$8.50</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Loyalty Actions -->
+                          <div class="space-y-3">
+                            <button
+                              class="w-full bg-white border border-primary text-primary px-4 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-primary/5 transition flex items-center justify-center"
+                            >
+                              <i class="ri-gift-line mr-2"></i> Redeem Points
+                            </button>
+                            <button
+                              class="w-full bg-white border border-gray-200 text-gray-700 px-4 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-gray-50 transition flex items-center justify-center"
+                            >
+                              <i class="ri-message-2-line mr-2"></i> Send
+                              Promotion
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Reports Tab (Initially Hidden) -->
+                <div class="tab-content hidden" id="reports-tab">
+                  <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 pr-0 md:pr-8">
+                      <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+                        Business Reports
+                      </h3>
+                      <p class="text-gray-600 mb-6">
+                        Get insights into your business performance with
+                        easy-to-understand reports and analytics.
+                      </p>
+                      <ul class="space-y-4">
+                        <li class="flex items-start">
+                          <div
+                            class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5"
+                          >
+                            <i class="ri-line-chart-line"></i>
+                          </div>
+                          <div>
+                            <h4 class="font-medium text-gray-900">
+                              Sales Trends
+                            </h4>
+                            <p class="text-gray-600">
+                              Track your daily, weekly, and monthly sales
+                              performance.
+                            </p>
+                          </div>
+                        </li>
+                        <li class="flex items-start">
+                          <div
+                            class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5"
+                          >
+                            <i class="ri-pie-chart-line"></i>
+                          </div>
+                          <div>
+                            <h4 class="font-medium text-gray-900">
+                              Product Performance
+                            </h4>
+                            <p class="text-gray-600">
+                              Identify your best-selling products and
+                              categories.
+                            </p>
+                          </div>
+                        </li>
+                        <li class="flex items-start">
+                          <div
+                            class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5"
+                          >
+                            <i class="ri-download-line"></i>
+                          </div>
+                          <div>
+                            <h4 class="font-medium text-gray-900">
+                              Export Reports
+                            </h4>
+                            <p class="text-gray-600">
+                              Download your data for record-keeping or sharing
+                              with partners.
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="md:w-1/2 mt-8 md:mt-0">
+                      <div class="bg-gray-100 rounded-lg p-4 shadow-inner">
+                        <div class="bg-white rounded-lg shadow-sm p-4">
+                          <div class="flex items-center justify-between mb-4">
+                            <h4 class="font-medium text-gray-900">
+                              Sales Overview
+                            </h4>
+                            <div
+                              class="text-sm bg-gray-100 px-2 py-1 rounded-full"
+                            >
+                              Last 7 days
+                            </div>
+                          </div>
+                          <!-- Sales Chart -->
+                          <div class="h-48 mb-4" id="sales-chart"></div>
+                          <!-- Stats Summary -->
+                          <div class="grid grid-cols-2 gap-3 mb-4">
+                            <div class="bg-blue-50 p-3 rounded-lg">
+                              <div class="text-sm text-blue-700">
+                                Total Sales
+                              </div>
+                              <div class="text-xl font-semibold text-gray-900">
+                                $487.25
+                              </div>
+                              <div class="text-xs text-blue-600">
+                                +12% from last week
+                              </div>
+                            </div>
+                            <div class="bg-green-50 p-3 rounded-lg">
+                              <div class="text-sm text-green-700">
+                                Transactions
+                              </div>
+                              <div class="text-xl font-semibold text-gray-900">
+                                42
+                              </div>
+                              <div class="text-xs text-green-600">
+                                +8% from last week
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Top Products -->
+                          <h5 class="font-medium text-gray-700 mb-2">
+                            Top Products
+                          </h5>
+                          <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                              <span class="text-gray-600"
+                                >Maize Flour (2kg)</span
+                              >
+                              <span class="font-medium text-gray-900"
+                                >32 units</span
+                              >
+                            </div>
+                            <div class="flex justify-between text-sm">
+                              <span class="text-gray-600"
+                                >Cooking Oil (1L)</span
+                              >
+                              <span class="font-medium text-gray-900"
+                                >24 units</span
+                              >
+                            </div>
+                            <div class="flex justify-between text-sm">
+                              <span class="text-gray-600">Sugar (1kg)</span>
+                              <span class="font-medium text-gray-900"
+                                >18 units</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Offline First Section -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 md:pr-12">
+              <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                Works Without Internet
+              </h2>
+              <p class="text-lg text-gray-600 mb-6">
+                DukaMate is designed to work offline, so you can manage your
+                shop even in areas with limited connectivity.
+              </p>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5"
+                  >
+                    <i class="ri-database-2-line"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-900">
+                      Local Data Storage
+                    </h4>
+                    <p class="text-gray-600">
+                      All your data is stored securely on your device, so you
+                      can access it anytime.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5"
+                  >
+                    <i class="ri-wifi-off-line"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-900">
+                      No Internet Required
+                    </h4>
+                    <p class="text-gray-600">
+                      Process sales, update inventory, and manage customers
+                      without an internet connection.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5"
+                  >
+                    <i class="ri-refresh-line"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-900">
+                      Sync When Connected
+                    </h4>
+                    <p class="text-gray-600">
+                      When internet is available, DukaMate automatically backs
+                      up your data to the cloud.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0">
+              <img
+                src="https://readdy.ai/api/search-image?query=A%20mobile%20phone%20showing%20a%20retail%20management%20app%20interface%20with%20offline%20mode%20indicator.%20The%20phone%20is%20being%20held%20by%20a%20shopkeeper%20in%20a%20small%20retail%20store%20in%20Africa.%20The%20interface%20shows%20inventory%20management%20with%20offline%20sync%20status.%20The%20lighting%20is%20bright%20and%20clear%2C%20showing%20the%20apps%20clean%20design.&width=600&height=500&seq=offline1&orientation=portrait"
+                alt="DukaMate Offline Mode"
+                class="rounded-xl shadow-lg w-full object-cover object-top"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              What Shop Owners Say
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+              Hear from small business owners who have transformed their
+              operations with DukaMate.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-md">
+              <div class="flex items-center mb-4">
+                <div class="text-primary">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-6">
+                "DukaMate has completely changed how I run my shop. I used to
+                write everything in notebooks, but now I can track my inventory
+                and sales with just a few taps. The offline feature is perfect
+                for our area where internet is unreliable."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-4"
+                >
+                  <i class="ri-user-line ri-lg"></i>
+                </div>
+                <div>
+                  <h5 class="font-medium text-gray-900">Grace Nyambura</h5>
+                  <p class="text-sm text-gray-500">
+                    General Store Owner, Kakuma
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-md">
+              <div class="flex items-center mb-4">
+                <div class="text-primary">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-6">
+                "The loyalty program has helped me keep customers coming back.
+                They love earning points, and I've seen my regular customers
+                increase their purchases. The app is simple enough that I
+                learned to use it in just one day."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-4"
+                >
+                  <i class="ri-user-line ri-lg"></i>
+                </div>
+                <div>
+                  <h5 class="font-medium text-gray-900">Mohammed Hassan</h5>
+                  <p class="text-sm text-gray-500">Electronics Shop, Kakuma</p>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-md">
+              <div class="flex items-center mb-4">
+                <div class="text-primary">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-6">
+                "As an NGO supporting small businesses, we've helped over 50
+                shop owners implement DukaMate. The results have been
+                impressive—average revenue increases of 23% and much better
+                inventory management. The offline capability is essential here."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-4"
+                >
+                  <i class="ri-user-line ri-lg"></i>
+                </div>
+                <div>
+                  <h5 class="font-medium text-gray-900">Sarah Omondi</h5>
+                  <p class="text-sm text-gray-500">
+                    Business Development Officer, IRC
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Pricing Section -->
+      <section id="pricing" class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Simple, Affordable Pricing
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+              Choose the plan that works best for your business needs.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <!-- Basic Plan -->
+            <div
+              class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden transition duration-300 hover:shadow-lg"
+            >
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Basic</h3>
+                <p class="text-gray-600 mb-6">
+                  Perfect for new small businesses
+                </p>
+                <div class="flex items-baseline mb-6">
+                  <span class="text-4xl font-bold text-gray-900">Free</span>
+                </div>
+                <ul class="space-y-3 mb-6">
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                    >
+                      <i class="ri-check-line"></i>
+                    </div>
+                    <span class="text-gray-600">Up to 100 products</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                    >
+                      <i class="ri-check-line"></i>
+                    </div>
+                    <span class="text-gray-600">Basic sales reports</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                    >
+                      <i class="ri-check-line"></i>
+                    </div>
+                    <span class="text-gray-600">Digital receipts</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-gray-300 mr-2"
+                    >
+                      <i class="ri-close-line"></i>
+                    </div>
+                    <span class="text-gray-400">Customer loyalty program</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-gray-300 mr-2"
+                    >
+                      <i class="ri-close-line"></i>
+                    </div>
+                    <span class="text-gray-400">SMS notifications</span>
+                  </li>
+                </ul>
+                <a
+                  href="#download"
+                  class="block w-full bg-white text-primary border border-primary text-center px-4 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-primary/5 transition"
+                  >Download Now</a
+                >
+              </div>
+            </div>
+            <!-- Standard Plan -->
+            <div
+              class="bg-white rounded-xl shadow-md border-2 border-primary overflow-hidden transition duration-300 hover:shadow-lg relative"
+            >
+              <div
+                class="absolute top-0 right-0 bg-primary text-white text-xs font-semibold px-3 py-1 rounded-bl-lg"
+              >
+                POPULAR
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                  Standard
+                </h3>
+                <p class="text-gray-600 mb-6">For growing businesses</p>
+                <div class="flex items-baseline mb-6">
+                  <span class="text-4xl font-bold text-gray-900">$5</span>
+                  <span class="text-gray-500 ml-1">/month</span>
+                </div>
+                <ul class="space-y-3 mb-6">
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                    >
+                      <i class="ri-check-line"></i>
+                    </div>
+                    <span class="text-gray-600">Unlimited products</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                    >
+                      <i class="ri-check-line"></i>
+                    </div>
+                    <span class="text-gray-600">Advanced sales reports</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                    >
+                      <i class="ri-check-line"></i>
+                    </div>
+                    <span class="text-gray-600">Digital receipts</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                    >
+                      <i class="ri-check-line"></i>
+                    </div>
+                    <span class="text-gray-600">Customer loyalty program</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-gray-300 mr-2"
+                    >
+                      <i class="ri-close-line"></i>
+                    </div>
+                    <span class="text-gray-400">SMS notifications</span>
+                  </li>
+                </ul>
+                <a
+                  href="#download"
+                  class="block w-full bg-primary text-white text-center px-4 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-primary/90 transition"
+                  >Get Started</a
+                >
+              </div>
+            </div>
+            <!-- Premium Plan -->
+            <div
+              class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden transition duration-300 hover:shadow-lg"
+            >
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                  Premium
+                </h3>
+                <p class="text-gray-600 mb-6">For established businesses</p>
+                <div class="flex items-baseline mb-6">
+                  <span class="text-4xl font-bold text-gray-900">$12</span>
+                  <span class="text-gray-500 ml-1">/month</span>
+                </div>
+                <ul class="space-y-3 mb-6">
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                    >
+                      <i class="ri-check-line"></i>
+                    </div>
+                    <span class="text-gray-600">Unlimited products</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                    >
+                      <i class="ri-check-line"></i>
+                    </div>
+                    <span class="text-gray-600">Advanced sales reports</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                    >
+                      <i class="ri-check-line"></i>
+                    </div>
+                    <span class="text-gray-600">Digital receipts</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                    >
+                      <i class="ri-check-line"></i>
+                    </div>
+                    <span class="text-gray-600">Customer loyalty program</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex-shrink-0 flex items-center justify-center text-primary mr-2"
+                    >
+                      <i class="ri-check-line"></i>
+                    </div>
+                    <span class="text-gray-600"
+                      >SMS notifications (100/month)</span
+                    >
+                  </li>
+                </ul>
+                <a
+                  href="#download"
+                  class="block w-full bg-white text-primary border border-primary text-center px-4 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-primary/5 transition"
+                  >Get Started</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section id="download" class="py-16 bg-primary/5">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">
+              Ready to Transform Your Business?
+            </h2>
+            <p class="text-lg text-gray-600 mb-8">
+              Download DukaMate today and start managing your shop more
+              efficiently, even without internet.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8"
+            >
+              <a
+                href="#"
+                class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-primary/90 transition flex items-center justify-center"
+              >
+                <i class="ri-google-play-fill mr-2 ri-lg"></i> Google Play
+              </a>
+              <a
+                href="#"
+                class="bg-gray-900 text-white px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-gray-800 transition flex items-center justify-center"
+              >
+                <i class="ri-apple-fill mr-2 ri-lg"></i> App Store
+              </a>
+            </div>
+            <p class="text-gray-500">
+              Need help getting started?
+              <a href="#" class="text-primary font-medium"
+                >Contact our support team</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Demo Request Section -->
+      <section id="demo" class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-4xl mx-auto">
+            <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden">
+              <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 p-8">
+                  <h2 class="text-2xl font-bold text-gray-900 mb-4">
+                    Request a Demo
+                  </h2>
+                  <p class="text-gray-600 mb-6">
+                    Want to see DukaMate in action? Fill out the form and our
+                    team will contact you for a personalized demo.
+                  </p>
+                  <form
+                    id="demo-form"
+                    class="space-y-4"
+                    onsubmit="return false;"
+                  >
+                    <div>
+                      <label
+                        for="name"
+                        class="block text-sm font-medium text-gray-700 mb-1"
+                        >Full Name</label
+                      >
+                      <input
+                        type="text"
+                        id="name"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-900"
+                        placeholder="Your name"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="email"
+                        class="block text-sm font-medium text-gray-700 mb-1"
+                        >Email Address</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-900"
+                        placeholder="your@email.com"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="phone"
+                        class="block text-sm font-medium text-gray-700 mb-1"
+                        >Phone Number</label
+                      >
+                      <input
+                        type="tel"
+                        id="phone"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-900"
+                        placeholder="+254 7XX XXX XXX"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="business"
+                        class="block text-sm font-medium text-gray-700 mb-1"
+                        >Business Type</label
+                      >
+                      <select
+                        id="business"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-900 pr-8"
+                      >
+                        <option value="">Select your business type</option>
+                        <option value="grocery">Grocery Store</option>
+                        <option value="clothing">Clothing Shop</option>
+                        <option value="electronics">Electronics Shop</option>
+                        <option value="general">General Store</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        <span class="text-sm text-gray-600"
+                          >I agree to receive communications from DukaMate</span
+                        >
+                      </label>
+                    </div>
+                    <button
+                      type="submit"
+                      id="demo-submit"
+                      class="w-full bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-primary/90 transition"
+                    >
+                      Request Demo
+                    </button>
+                  </form>
+                  <div
+                    id="success-message"
+                    class="hidden fixed inset-0 bg-gray-900/50 z-50 flex items-center justify-center"
+                  >
+                    <div class="bg-white rounded-lg p-6 max-w-sm mx-4">
+                      <div
+                        class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-500 mx-auto mb-4"
+                      >
+                        <i class="ri-check-line ri-xl"></i>
+                      </div>
+                      <h3
+                        class="text-xl font-semibold text-gray-900 text-center mb-2"
+                      >
+                        Thank You!
+                      </h3>
+                      <p class="text-gray-600 text-center mb-4">
+                        We've received your demo request. Our team will contact
+                        you soon.
+                      </p>
+                      <button
+                        onclick="this.parentElement.parentElement.classList.add('hidden')"
+                        class="w-full bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-primary/90 transition"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                  <script id="form-script">
+                    document.addEventListener("DOMContentLoaded", function () {
+                      const form = document.getElementById("demo-form");
+                      const submitButton = document.getElementById("demo-submit");
+                      const successMessage = document.getElementById("success-message");
+                      submitButton.addEventListener("click", function () {
+                        const name = form.querySelector("#name").value;
+                        const email = form.querySelector("#email").value;
+                        const phone = form.querySelector("#phone").value;
+                        const business = form.querySelector("#business").value;
+                        const consent = form.querySelector('input[type="checkbox"]').checked;
+                        if (!name || !email || !phone || !business || !consent) {
+                          const emptyFields = [];
+                          if (!name) emptyFields.push("Name");
+                          if (!email) emptyFields.push("Email");
+                          if (!phone) emptyFields.push("Phone");
+                          if (!business) emptyFields.push("Business Type");
+                          if (!consent) emptyFields.push("Consent");
+                          const message = document.createElement("div");
+                          message.className = "text-red-500 text-sm mt-2";
+                          message.textContent = `Please fill in all required fields: ${emptyFields.join(", ")}`;
+                          const existingMessage = form.querySelector(".text-red-500");
+                          if (existingMessage) {
+                            existingMessage.remove();
+                          }
+                          form.appendChild(message);
+                          return;
+                        }
+                        form.reset();
+                        successMessage.classList.remove("hidden");
+                      });
+                    });
+                  </script>
+                </div>
+                <div
+                  class="md:w-1/2 bg-primary/10 p-8 flex items-center justify-center"
+                >
+                  <div class="text-center">
+                    <div
+                      class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center text-primary mx-auto mb-4"
+                    >
+                      <i class="ri-customer-service-2-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                      Need immediate assistance?
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                      Our team is ready to help you get started with DukaMate.
+                    </p>
+                    <div class="space-y-2">
+                      <a
+                        href="tel:+254712345678"
+                        class="flex items-center justify-center text-primary font-medium"
+                      >
+                        <i class="ri-phone-line mr-2"></i> +254 712 345 678
+                      </a>
+                      <a
+                        href="mailto:support@dukamate.com"
+                        class="flex items-center justify-center text-primary font-medium"
+                      >
+                        <i class="ri-mail-line mr-2"></i> support@dukamate.com
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-900 text-white pt-12 pb-6">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h1 class="text-2xl font-['Pacifico'] text-white mb-4">DukaMate</h1>
+            <p class="text-gray-400 mb-4">
+              Empowering small retailers with simple, offline-first tools to
+              manage their business efficiently.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="ri-facebook-fill ri-lg"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="ri-twitter-fill ri-lg"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="ri-instagram-fill ri-lg"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="ri-linkedin-fill ri-lg"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h5 class="font-semibold text-lg mb-4">Product</h5>
+            <ul class="space-y-2">
+              <li>
+                <a href="#features" class="text-gray-400 hover:text-white"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a href="#pricing" class="text-gray-400 hover:text-white"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Download</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Updates</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-semibold text-lg mb-4">Support</h5>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Help Center</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Community</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Training Videos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-semibold text-lg mb-4">Company</h5>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Careers</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Partners</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            © 2025 DukaMate. All rights reserved.
+          </p>
+          <div class="flex space-x-6">
+            <a href="#" class="text-gray-400 hover:text-white text-sm"
+              >Privacy Policy</a
+            >
+            <a href="#" class="text-gray-400 hover:text-white text-sm"
+              >Terms of Service</a
+            >
+            <a href="#" class="text-gray-400 hover:text-white text-sm"
+              >Cookie Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <script id="navigation-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const closeMenuButton = document.getElementById("close-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+        function toggleMobileMenu() {
+          mobileMenu.classList.toggle("hidden");
+          document.body.classList.toggle("overflow-hidden");
+        }
+        mobileMenuButton.addEventListener("click", toggleMobileMenu);
+        closeMenuButton.addEventListener("click", toggleMobileMenu);
+        mobileMenuLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            toggleMobileMenu();
+            const href = link.getAttribute("href");
+            const element = document.querySelector(href);
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+            }
+          });
+        });
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+            if (href !== "#") {
+              const element = document.querySelector(href);
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }
+          });
+        });
+      });
+    </script>
+    <script id="tab-switcher-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabButtons = document.querySelectorAll(".tab-btn");
+        const tabContents = document.querySelectorAll(".tab-content");
+        const tabIndicator = document.querySelector(".tab-indicator");
+        let currentTab = "inventory";
+        function showFeedback(message) {
+          const feedback = document.createElement("div");
+          feedback.className =
+            "fixed bottom-4 right-4 bg-primary text-white px-4 py-2 rounded-lg shadow-lg z-50 transition-opacity duration-300";
+          feedback.textContent = message;
+          document.body.appendChild(feedback);
+
+          setTimeout(() => {
+            feedback.style.opacity = "0";
+            setTimeout(() => feedback.remove(), 300);
+          }, 2000);
+        }
+        function setActiveTab(tabId, animate = true) {
+          const activeContent = document.getElementById(`${tabId}-tab`);
+          const activeButton = document.querySelector(
+            `.tab-btn[data-tab="${tabId}"]`,
+          );
+          if (!activeContent || !activeButton) return;
+          if (currentTab !== tabId) {
+            showFeedback(`Viewing ${tabId.charAt(0).toUpperCase() + tabId.slice(1)}`);
+            currentTab = tabId;
+          }
+          tabContents.forEach((content) => {
+            if (content === activeContent) {
+              content.style.display = "block";
+              content.style.opacity = "0";
+              content.classList.remove("hidden");
+              if (animate) {
+                setTimeout(() => {
+                  content.style.opacity = "1";
+                  content.style.transform = "translateX(0)";
+                }, 50);
+              } else {
+                content.style.opacity = "1";
+                content.style.transform = "translateX(0)";
+              }
+            } else {
+              content.classList.add("hidden");
+              content.style.opacity = "0";
+              content.style.transform = "translateX(20px)";
+            }
+          });
+          tabButtons.forEach((btn) => {
+            if (btn === activeButton) {
+              btn.classList.add("text-primary", "font-medium");
+              btn.classList.remove("text-gray-600");
+            } else {
+              btn.classList.remove("text-primary", "font-medium");
+              btn.classList.add("text-gray-600");
+            }
+          });
+          const isMobile = window.innerWidth < 768;
+          const transitionDuration = animate
+            ? "transition-transform duration-300"
+            : "";
+          if (isMobile) {
+            const buttonWidth = activeButton.offsetWidth;
+            const buttonLeft = activeButton.offsetLeft;
+            tabIndicator.style.width = `${buttonWidth - 8}px`;
+            tabIndicator.style.height = "85%";
+            tabIndicator.className = `tab-indicator bg-white absolute ${transitionDuration}`;
+            tabIndicator.style.transform = `translateX(${buttonLeft}px)`;
+          } else {
+            const buttonHeight = activeButton.offsetHeight;
+            const buttonTop = activeButton.offsetTop;
+            tabIndicator.style.width = "92%";
+            tabIndicator.style.height = `${buttonHeight - 8}px`;
+            tabIndicator.className = `tab-indicator bg-white absolute ${transitionDuration}`;
+            tabIndicator.style.transform = `translateY(${buttonTop}px)`;
+          }
+        }
+        tabButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const tabId = button.dataset.tab;
+            setActiveTab(tabId);
+          });
+        });
+        setActiveTab("inventory", false);
+        let resizeTimeout;
+        window.addEventListener("resize", () => {
+          clearTimeout(resizeTimeout);
+          resizeTimeout = setTimeout(() => {
+            const activeTabId = document.querySelector(".tab-btn.text-primary")
+              .dataset.tab;
+            setActiveTab(activeTabId, false);
+          }, 250);
+        });
+      });
+    </script>
+    <script id="sales-chart-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const chartContainer = document.getElementById("sales-chart");
+        if ( chartContainer) {
+          const chart = echarts.init(chartContainer);
+          const option = {
+            animation: false,
+            grid: {
+              top: 10,
+              right: 10,
+              bottom: 20,
+              left: 40,
+            },
+            xAxis: {
+              type: "category",
+              data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+              axisLine: {
+                lineStyle: {
+                  color: "#d1d5db",
+                },
+              },
+              axisLabel: {
+                color: "#6b7280",
+              },
+            },
+            yAxis: {
+              type: "value",
+              axisLine: {
+                show: false,
+              },
+              axisLabel: {
+                color: "#6b7280",
+              },
+              splitLine: {
+                lineStyle: {
+                  color: "#e5e7eb",
+                },
+              },
+            },
+            tooltip: {
+              trigger: "axis",
+              backgroundColor: "rgba(255, 255, 255, 0.8)",
+              borderColor: "#e5e7eb",
+              textStyle: {
+                color: "#1f2937",
+              },
+            },
+            series: [
+              {
+                data: [45, 82, 65, 93, 71, 89, 102],
+                type: "line",
+                smooth: true,
+                symbol: "none",
+                lineStyle: {
+                  color: "rgba(87, 181, 231, 1)",
+                  width: 3,
+                },
+                areaStyle: {
+                  color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                    {
+                      offset: 0,
+                      color: "rgba(87, 181, 231, 0.2)",
+                    },
+                    {
+                      offset: 1,
+                      color: "rgba(87, 181, 231, 0.05)",
+                    },
+                  ]),
+                },
+              },
+            ],
+          };
+          chart.setOption(option);
+          window.addEventListener("resize", function () {
+            chart.resize();
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
